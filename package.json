@@ -1,0 +1,19 @@
+{
+  "name": "social-proof-section-master",
+  "version": "1.0.0",
+  "description": "The Social proof section coding challenge, created on 6 June 2021",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "browser-sync start --server --port='8080' --watch --no-inject-changes",
+    "watch:sass": "sass scss/main.scss css/style.css --watch --no-source-map",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "sass scss/main.scss css/style.css --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 20 versions' css/style.css --output css/style.css",
+    "prettier": "npx prettier --write .",
+    "build": "npm-run-all compile:sass  prefix:css prettier"
+  },
+  "keywords": ["Frontend Mentor Challenge", "Social Proof Section"],
+  "author": "Vanza Setia",
+  "license": "ISC"
+}

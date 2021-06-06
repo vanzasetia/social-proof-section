@@ -1,0 +1,26 @@
+$default-html-font-size: 100% !default;
+$black: rgb(17, 17, 17) !default;
+$white: rgb(255, 255, 255) !default;
+
+// Specific Variables Only For this project
+
+/// Primary Color ///
+$very-dark-magenta: rgb(80,32,80);
+$soft-pink: rgb(238,104,164);
+
+/// Neutral Color ///
+$dark-grayish-magenta: rgb(147,123,146);
+$light-grayish-magenta: rgb(247,242,247);
+
+// Breakpoints
+$breakpoints-up: (
+  'small': 31.25em,
+  'medium': 56.25em,
+  'big': 90em
+);
+
+$breakpoints-down: (
+  'small': 31.1875em,
+  'medium': 56.1875em,
+  'big': 89.9375em
+);
