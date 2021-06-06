@@ -60,18 +60,10 @@ q::after {
   content: '';
 }
 
-
-
-
-
 /// UTILITIES ///
 .round-img {
   border-radius: 50%;
 }
-
-
-
-
 
 /// BG PATTERN ///
 .bg-pattern-top {
@@ -81,7 +73,7 @@ q::after {
   background: url('../images/bg-pattern-top-mobile.svg') no-repeat;
   height: rem(232);
   width: rem(374);
-  
+
   @include breakpoint-up('medium') {
     background: url('../images/bg-pattern-top-desktop.svg') no-repeat;
     height: rem(362);
@@ -96,22 +88,19 @@ q::after {
   background: url('../images/bg-pattern-bottom-mobile.svg') no-repeat;
   height: rem(503);
   width: rem(375);
-  
+
   @include breakpoint-up('small') {
     display: none;
   }
-  
+
   @include breakpoint-up('medium') {
     display: block;
-    background: url('../images/bg-pattern-bottom-desktop.svg') no-repeat;
+    background: url('../images/bg-pattern-bottom-desktop.svg')
+      no-repeat;
     height: rem(673);
     width: rem(1085);
   }
 }
-
-
-
-
 
 /// USERS LOVE ///
 .users-love {
@@ -139,13 +128,8 @@ q::after {
   }
 }
 
-
-
-
-
 /// RATING ///
 .rating {
-
   @include breakpoint-up('medium') {
     flex-basis: 40%;
   }
@@ -189,7 +173,7 @@ q::after {
   gap: 0.5em;
   margin-bottom: rem(15);
 
-  @supports not (gap:0.5em) {
+  @supports not (gap: 0.5em) {
     &__icon-star:not(:last-child) {
       margin-right: 0.5em;
     }
@@ -201,17 +185,13 @@ q::after {
   }
 }
 
-
-
-
-
 /// TESTIMONIALS ///
 .testimonials {
   display: flex;
   flex-direction: column;
   gap: 1em;
 
-  @supports not (gap:1em) {
+  @supports not (gap: 1em) {
     &__box:not(:last-child) {
       margin-bottom: 1em;
     }
@@ -220,12 +200,11 @@ q::after {
   @include breakpoint-up('medium') {
     flex-direction: row;
 
-    @supports not (gap:1em) {
+    @supports not (gap: 1em) {
       &__box:not(:last-child) {
         margin-right: 1em;
       }
     }
-    
   }
 
   &__box {
@@ -243,11 +222,10 @@ q::after {
 
 @include breakpoint-up('medium') {
   .testimonials__box {
-    
     &:nth-of-type(2) {
       top: rem(20);
     }
-    
+
     &:last-of-type {
       top: rem(40);
     }
@@ -259,7 +237,7 @@ q::after {
   align-items: center;
   gap: 1.5em;
 
-  @supports not (gap:1.5em) {
+  @supports not (gap: 1.5em) {
     &__img {
       margin-right: 1.5em;
     }
