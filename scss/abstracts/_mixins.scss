@@ -7,8 +7,26 @@
   color: set-color($color);
 }
 
+// $val : string
 @mixin calc($prop, $val) {
   #{$prop}: calc(#{$val});
+}
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
 }
 
 @mixin breakpoint-up($size) {
