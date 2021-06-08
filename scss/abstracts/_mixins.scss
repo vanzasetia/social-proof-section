@@ -7,6 +7,10 @@
   color: set-color($color);
 }
 
+@mixin calc($prop, $val) {
+  #{$prop}: calc(#{$val});
+}
+
 @mixin breakpoint-up($size) {
   @media screen and (min-width: map-get($breakpoints-up, $size)) {
     @content;
