@@ -6,224 +6,136 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!--
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>
-    eruda.init();
-  </script>
-  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    <meta name="title" content="Vanza Setia | Social Proof Section" />
+    <meta
+      name="description"
+      content="With a great products and amazing customer service, our customers are so happy with us. Take a look at what our customers have said!"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
+    <meta
+      name="url"
+      content="https://vanzasocialproof.netlify.app/"
+    />
+    <base href="/" />
+    <link
+      rel="canonical"
+      href="https://vanzasocialproof.netlify.app/"
+    />
+    <!-- Open Graph Protocol -->
+    <meta
+      property="og:title"
+      content="Vanza Setia | Social Proof Section"
+    />
+    <meta
+      property="og:description"
+      content="With a great products and amazing customer service, our customers are so happy with us. Take a look at what our customers have said!"
+    />
+    <meta
+      property="og:image"
+      content="https://vanzasocialproof.netlify.app/design/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://vanzasocialproof.netlify.app/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Prevent Google From Showing Search Box -->
+    <meta name="google" content="nositelinkssearchbox" />
+    <!-- Preload Font Family To Prevent Shifting Layout -->
+    <link
+      rel="preload"
+      href="./fonts/Spartan-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Spartan-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Spartan-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Directly Used Preloaded Fonts -->
+    <!-- prettier-ignore -->
+    <style>
+      @font-face{font-family:"Spartan";font-style:normal;font-weight:700;font-display:swap;src:url("./fonts/Spartan-Bold.woff2") format("woff2"), url("./fonts/Spartan-Bold.woff") format("woff")}@font-face{font-family:"Spartan";font-style:normal;font-weight:500;font-display:swap;src:url("./fonts/Spartan-Medium.woff2") format("woff2"), url("./fonts/Spartan-Medium.woff") format("woff")}@font-face{font-family:"Spartan";font-style:normal;font-weight:400;font-display:swap;src:url("./fonts/Spartan-Regular.woff2") format("woff2"), url("./fonts/Spartan-Regular.woff") format("woff")}    
+    </style>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="/favicons/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Social proof section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta
+      name="msapplication-config"
+      content="/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Current CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Android Dev Tools -->
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+      eruda.init()
+    </script>
+    <title>Vanza Setia | Social Proof Section</title>
   </head>
-  <body>
-    <div class="bg-pattern-top"></div>
-    <div class="bg-pattern-bottom"></div>
-    <main>
-      <!-- Users Love -->
-      <section class="users-love">
-        <h2 class="users-love__heading">
-          10,000+ of our users love our products.
-        </h2>
-        <p class="users-love__paragraph">
-          We only provide great products combined with excellent
-          customer service. See what our satisfied customers are
-          saying about our services.
-        </p>
-      </section>
-      <!-- End of Users Love -->
-      <!-- Rating -->
-      <aside class="rating">
-        <!-- Single Item -->
-        <figure class="rating__box">
-          <!-- Stars -->
-          <div class="rating__stars stars">
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-          </div>
-          <!-- End of Stars -->
-          <figcaption class="rating__review">
-            Rated 5 Stars in Reviews
-          </figcaption>
-        </figure>
-        <!-- End of Single Item -->
-        <!-- Single Item -->
-        <figure class="rating__box">
-          <!-- Stars -->
-          <div class="rating__stars stars">
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-          </div>
-          <!-- End of Stars -->
-          <figcaption class="rating__review">
-            Rated 5 Stars in Report Guru
-          </figcaption>
-        </figure>
-        <!-- End of Single Item -->
-        <!-- Single Item -->
-        <figure class="rating__box">
-          <!-- Stars -->
-          <div class="rating__stars stars">
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-            <img
-              src="./images/icon-star.svg"
-              alt="star icon"
-              class="stars__icon-star"
-            />
-          </div>
-          <!-- End of Stars -->
-          <figcaption class="rating__review">
-            Rated 5 Stars in BestTech
-          </figcaption>
-        </figure>
-        <!-- End of Single Item -->
-      </aside>
-      <!-- End of Rating -->
-      <!-- Testimonials -->
-      <section class="testimonials">
-        <!-- Single Item -->
-        <div class="testimonials__box">
-          <!-- Person -->
-          <figure class="testimonials__person person">
-            <img
-              src="./images/image-colton.jpg"
-              alt="Colton Smith"
-              class="person__img round-img"
-            />
-            <figcaption class="person__info">
-              <h4 class="person__name">Colton Smith</h4>
-              <h4 class="person__status">Verified Buyer</h4>
-            </figcaption>
-          </figure>
-          <!-- End of Person -->
-          <q class="testimonials__quote"
-            >"We needed the same printed design as the one we had
-            ordered a week prior. Not only did they find the original
-            order, but we also received it in time. Excellent!"</q
-          >
-        </div>
-        <!-- End of Single Item -->
-        <!-- Single Item -->
-        <div class="testimonials__box">
-          <!-- Person -->
-          <figure class="testimonials__person person">
-            <img
-              src="./images/image-irene.jpg"
-              alt="Irene Roberts"
-              class="person__img round-img"
-            />
-            <figcaption class="person__info">
-              <h4 class="person__name">Irene Roberts</h4>
-              <h4 class="person__status">Verified Buyer</h4>
-            </figcaption>
-          </figure>
-          <!-- End of Person -->
-          <q class="testimonials__quote"
-            >"Customer service is always excellent and very quick turn
-            around. Completely delighted with the simplicity of the
-            purchase and the speed of delivery."</q
-          >
-        </div>
-        <!-- End of Single Item -->
-        <!-- Single Item -->
-        <div class="testimonials__box">
-          <!-- Person -->
-          <figure class="testimonials__person person">
-            <img
-              src="./images/image-anne.jpg"
-              alt="Anne Wallace"
-              class="person__img round-img"
-            />
-            <figcaption class="person__info">
-              <h4 class="person__name">Anne Wallace</h4>
-              <h4 class="person__status">Verified Buyer</h4>
-            </figcaption>
-          </figure>
-          <!-- End of Person -->
-          <q class="testimonials__quote"
-            >"Put an order with this company and can only praise them
-            for the very high standard. Will definitely use them again
-            and recommend them to everyone!"</q
-          >
-        </div>
-        <!-- End of Single Item -->
-      </section>
-      <!-- End of Testimonials -->
-    </main>
+  <body dir="ltr">
+    <h1>Hello World</h1>
+    <!--
+    10,000+ of our users love our products.
+
+    We only provide great products combined with excellent customer service.
+    See what our satisfied customers are saying about our services.
+    
+    Rated 5 Stars in Reviews
+    Rated 5 Stars in Report Guru
+    Rated 5 Stars in BestTech
+    
+    Colton Smith 
+    Verified Buyer
+    "We needed the same printed design as the one we had ordered a week prior.
+    Not only did they find the original order, but we also received it in time.
+    Excellent!"
+    
+    Irene Roberts 
+    Verified Buyer
+    "Customer service is always excellent and very quick turn around. Completely
+    delighted with the simplicity of the purchase and the speed of delivery."
+    
+    Anne Wallace 
+    Verified Buyer
+    "Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!"
+    -->
   </body>
 </html>

@@ -1,32 +1,13 @@
-@use 'variables' as *;
-@use 'functions' as *;
+@use "variables"as *;
+@use "functions"as *;
 
-// MIXINS
 @mixin set-background($color) {
   background-color: $color;
   color: set-color($color);
 }
 
-// $val : string
 @mixin calc($prop, $val) {
   #{$prop}: calc(#{$val});
-}
-
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
 }
 
 @mixin breakpoint-up($size) {
@@ -37,6 +18,18 @@
 
 @mixin breakpoint-down($size) {
   @media screen and (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin color-scheme($value: "light") {
+  @media screen and (prefers-color-scheme:#{$value}) {
+    @content;
+  }
+}
+
+@mixin reduced-motion() {
+  @media screen and (prefers-reduced-motion: reduce) {
     @content;
   }
 }

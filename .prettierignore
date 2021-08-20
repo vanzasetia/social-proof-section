@@ -1,0 +1,5 @@
+*.md
+*.json
+scss/
+css/style.min.css
+js/*.min.js

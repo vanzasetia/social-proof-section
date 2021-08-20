@@ -1,26 +1,29 @@
+// Default style that I currently use on this project
 $default-html-font-size: 100% !default;
 $black: rgb(17, 17, 17) !default;
-$white: rgb(255, 255, 255) !default;
+$white: rgb(242, 242, 242) !default;
+$selection-bg: rgb(238, 104, 164) !default;
 
-// Specific Variables Only For this project
+// Primary
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
 
-/// Primary Color ///
-$very-dark-magenta: rgb(80, 32, 80);
-$soft-pink: rgb(238, 104, 164);
-
-/// Neutral Color ///
-$dark-grayish-magenta: rgb(147, 123, 146);
-$light-grayish-magenta: rgb(247, 242, 247);
+// Neutral
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$pure-white: hsl(0, 0%, 100%);
 
 // Breakpoints
+// Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  'small': 31.25em,
-  'medium': 56.25em,
-  'big': 90em
+  "tiny": "50em", // 800px
+  "very-small": "61.25em", // 980px
+  "small": 78.75em, // 1260px
+  "medium": 90em // 1440px
 );
-
 $breakpoints-down: (
-  'small': 31.1875em,
-  'medium': 56.1875em,
-  'big': 89.9375em
+  "tiny": "49.9375em", // 799px
+  "very-small": "61.1875em", // 979px
+  "small": "78.6875em", // 1259px
+  "medium": "89.9375em" // 1439px
 );
