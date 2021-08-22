@@ -137,7 +137,7 @@ git pull
 ```
 git checkout -b fixingbugs
 ```
-- Now, you can start editing the files. Run `npm start` for the development environment.
+- Now, you can start editing the files. Run `npm start` for the development environment. `localhost:8080` for web development and `localhost:8642` for `README.md`.
 - After you have finished editing, simply run `npm run build`.
 - Add all files to staging area.
 ```
