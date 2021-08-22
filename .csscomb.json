@@ -1,5 +1,5 @@
 {
-  "exclude": [".git/**", "node_modules/**", "bower_components/**", "scss/vendors/**", "css/style.min.css"],
+  "exclude": [".git/**", "node_modules/**", "bower_components/**", "scss/vendors/**", "css/style.min.css", "scss/abstracts/**"],
   "remove-empty-rulesets": true,
   "always-semicolon": true,
   "color-case": "lower",
