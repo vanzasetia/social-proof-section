@@ -8,7 +8,7 @@
     
     "devserver": "browser-sync start --server  --watch --port='8080' --no-inject-changes",
     "watch:sass": "sass scss/main.scss css/style.css --watch --no-source-map",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "npm-run-all --parallel devserver markserv watch:sass",
     
     "prettier:html": "npx prettier --write *.html",
     "comb:sass": "csscomb scss/ -v",
