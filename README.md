@@ -35,14 +35,14 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resource)
+  - [Useful resources](#useful-resources)
   - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
   - [Practice](#practice)
   - [Prerequisite](#prerequisite)
   - [Setup](#setup)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Acknowledgements](#acknowledgements)
   - [Thank you](#thank-you)
   - [Inspiration](#inspiration)
   - [Banner](#banner)
@@ -163,8 +163,8 @@ git push -u origin fixingbugs
 - Twitter - [@vanzasetia](https://www.twitter.com/vanzasetia)
 <!-- ENDOF Author -->
 
-<!-- Acknowledgments -->
-## Acknowledgement
+<!-- Acknowledgements -->
+## Acknowledgements
 [(Back to top)](#table-of-contents)
 
 ### Thank You!
@@ -177,7 +177,7 @@ For this `README.md` file I got inspiration from @jubeatt\'s [README.md file on 
 - For the banner image, I used [Canva](https://www.canva.com/). It's free and can be used on Android. 
 - The doodle image is coming from [Open Doodles website](https://opendoodles.com/). It's free!
 - For the programming logos, they're coming from [Devicon](https://devicon.dev/) for the HTML and CSS logo. For the Sass I used the Sass logo from the [Sass official website](https://sass-lang.com/styleguide/brand).
-<!-- END OF Acknowledgments -->
+<!-- END OF Acknowledgements -->
 
 <!-- LICENSE -->
 ## License
