@@ -35,6 +35,7 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+    - [CSS Shorthand Properties](#css-shorthand-properties)
   - [Useful resources](#useful-resources)
   - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
@@ -88,9 +89,34 @@ Users should be able to:
 
 ![Structure of the page](./images/general-structure.jpg)
 
-### Story
-
 ### What I Learned
+Well I actually learn a lot about how to write a good `README.md`, than the project itself. But, I'm gonna write every technique that I did when building this project.
+
+#### CSS Shorthand Properties
+I recommend to always use shorthand property everytime you have a chance to do it. Because...
+
+> Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.
+
+From [MDN | CSS Shorthand Property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+
+It saves your priceless time and energy! But, it is a little bit tricky. I recommend that only use shorthand properties, like `font`, `padding`, `background`, `margin`, etc, for things that will consistent on any condition. In this case, the *repetition*, *position*, and the *size* of the background will always be the same. But, the `background-image` will change on desktop screen size. So, what I did...
+```css
+body {
+  /* The position, repetition, and 
+     the size will always be the same,
+     no matter how big or small the 
+     user screen size. */
+  background: 
+    top left 100% no-repeat, 
+    bottom right 100% no-repeat;
+  /* While the image url will be changed
+     on certain size. */
+  background-image: 
+    url("../images/bg-pattern-top-mobile.svg"), 
+    url("../images/bg-pattern-bottom-mobile.svg");
+}
+```
+This way, you only need to write the new `background-image` inside the `@media` query.
 
 ### Useful Resources
 
