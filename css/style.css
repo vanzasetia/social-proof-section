@@ -389,6 +389,10 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+main {
+  padding: 4rem 1.5rem;
+}
+
 h1 {
   margin: 0.625rem 0;
   line-height: 1.4;
