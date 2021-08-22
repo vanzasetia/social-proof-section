@@ -413,3 +413,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.testimonial__wrapper {
+  text-align: center;
+}
