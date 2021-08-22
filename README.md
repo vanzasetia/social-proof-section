@@ -1,12 +1,19 @@
-# Chat App CSS Illustration
+<!-- Banner -->
+![Banner](./images/banner.jpg)
+<!-- ENDOF Banner-->
 
+<!-- Badges -->
 <p align="left">
-  <img src="https://img.shields.io/badge/Difficulty-Intermediate-yellow?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/chat-app-css-illustration?style=for-the-badge&logo=github">
+  <img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/social-proof-section?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/chat-app-css-illustration?style=for-the-badge&logo=git">
   <img alt="Netlify" src="https://img.shields.io/netlify/9c613af3-0754-41ce-b44d-b5396b4738a8?style=for-the-badge&logo=netlify">
+  <img alt="GitHub" src="https://img.shields.io/github/license/vanzasetia/social-proof-section?color=green&style=for-the-badge&logo=github">
 </p>
+<!-- ENDOF Badges -->
+
+<!-- CSS Validation Status -->
 <p>
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img style="border:0;width:88px;height:31px"
@@ -14,60 +21,192 @@
         alt="Valid CSS!" />
     </a>
 </p>
+<!-- ENDOF CSS Validation Status -->
 
-## Feedback and Live Review
-* [🌍 Live Review](https://vanzachatapp.netlify.app/)
-* [👉 Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/chat-app-css-illustration-html-css-sass-85OdKVY48)
-* [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1427479692987174915?s=19)
+<!-- Title -->
+# Social Proof Section Challenge
+<!-- Title -->
 
-## Screenshot
-![Desktop preview](./screenshots/desktop.jpg)
-
+<!-- Table Of Contents -->
 ## Table of contents
-- [Story](#the-story-when-doing-this-challenge)
-  - [When Building the body background](#body-background)
-  - [When Building the Person Part](#person)
-  - [When Building the Chat Part](#chat)
-  - [Animation Part](#animation)
-- [What I Learned](#what-i-learned)
-- [Technology that I used](#built-with)
-- [Continued Development](#continued-development)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resource)
+  - [Continued development](#continued-development)
+- [How to contribute](#how-to-contribute)
+  - [Practice](#practice)
+  - [Prerequisite](#prerequisite)
+  - [Setup](#setup)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+  - [Thank You](#thank-you)
+  - [Inspiration](#inspiration)
+  - [Banner](#banner)
+- [License](#license)
+- [References](#references)
+<!-- ENDOF Table Of Contents -->
 
-## The Story When Doing This Challenge
-I used my [color picker](https://play.google.com/store/apps/details?id=gmikhail.colorpicker) and got this color `rgb(250, 250, 250)` for the body background color.
+<!-- Overview -->
+## Overview
+[(Back to top)](#table-of-contents)
 
-### Body Background
-This was so hard. So, I used CSS pseudo elements for the top and bottom background. I used absolute positioning and it worked!
+### The Challenge
+You should:
+- Build this website and get it looking as close to the design as possible.
+- Have a basic knowledge of HTML and CSS Grid or Flexbox.
+- Make it accessible for everyone by using HTML semantic tags, aria properties, and etc.
 
-But for the bottom one I couldn't make it *full width*, like the gradient (the top one), so I just created with the half width. The reason for it because, even after I applied `overflow-x: hidden` on the `body`, It's still causing a horizontal scroll bar appeared.
+Users should be able to:
+- View the optimal layout for the section depending on their device's screen size
 
-When it came to a moment where I need to make it responsive, it's scary. After several times trying to us`clamp()` and `calc()`, which are [CSS Math Functions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions). I didn't make it using those functions 😞.
+### Links
+- [🌐 Live Review](https://vanzasocialproof.netlify.app/)
+- [👨‍🏫 Frontend Mentor Solution](https://www.frontendmentor.io/solutions/social-proof-section-hmtl5-css3-sass-1MYuG2zzt)
+<!-- ENDOF Overview -->
 
-Ultimately, I ended up with the *normal* way of doing that by setting up media queries to change the size of the background for "every screen size" 😅.
+<!-- My Process -->
+## My Process
+[(Back to top)](#table-of-contents)
 
-### Person
-The `person` part I used flexbox to control the layout. I used `svg` for the chevron left and three dots icons.
+### Built With
+- HTML Semantic Tags
+- [Sass](https://sass-lang.com/)
+- Flexbox
+- Mobile-first workflow
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+- [Eruda - mobile console browser](https://github.com/liriliri/eruda)
+- And many [NPM packages](#prerequisite) 😂
 
-### Chat
-I noticed that the first chat was different. On the mobile it said, *That sounds great. I’d be happy to discuss more.*, while on the desktop it said, *That sounds great. I’d be happy with that.* I decided to follow the desktop version.
+### General Structure
 
-For the chat layout, I used flexbox for everything started from chat bubble to input message.
+![Structure of the page](./images/general-structure.jpg)
 
-### Animation
-For the animations, I will do it on my second try.
+### Story
 
-## What I Learned
-* I learned to create illustration using HTML and CSS.
-* I learned a little bit about `clamp()` and `calc()`.
+### What I Learned
 
-## Built With
-This project created using **HTML5**, **CSS3**, and **Sass**. I used flexbox to handle every layout.
+### Useful Resources
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="" width="auto" height="70px">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="" width="auto" height="70px">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="" width="auto" height="70px">
-</p>
+### Continued Development
+<!-- ENDOF My Process -->
 
-## Continued development
-I will take people feedback and improve this solution. Also, I will try to add animations and try to use `calc()` or `clamp()` for my second try, in the future.
+<!-- How To Contribute -->
+## How To Contribute
+[(Back to top)](#table-of-contents)
+
+### Practice
+If this the first time, you are starting to contribute to an open source, it might be confusing to follow along. I recommend to check this article about [make your first open-source contribution by Marco Denic](https://community.codenewbie.org/denicmarko/make-your-first-open-source-contribution-19k2). After that, you can come back and follow along.
+
+### Prerequisite
+- If you find a bug, typo, or anything like that, then continue. If don't, well just [skip to the next section](#author).
+- You need to have [Node.js](https://nodejs.org/en/) installed on your machine. To check that you have Node.js, try to run this command:
+```
+node --version
+```
+- You need all these packages **installed globally** to run all the scripts on `package.json`.
+  - [Browsersync](https://browsersync.io/) for the development server.
+  - [Sass](https://www.npmjs.com/package/sass) to compile Sass code into CSS.
+  - [npm-run-all](https://www.npmjs.com/package/npm-run-all) to run the `devserver` and the `watch:sass` script simultaneously. Also, for the `build` script.
+  - [Prettier](https://www.npmjs.com/package/prettier) to format the HTML code.
+  - [csscomb](https://www.npmjs.com/package/csscomb) to format and sort the properties order the Sass and CSS files.
+  - [markserv](https://www.npmjs.com/package/markserv) live server for the markdown file. (Optional).
+
+### Setup
+- First, fork this repo.
+- Clone this repo to your local machine with HTTPS or SSH.
+- Navigate to this project folder using your favorite terminal.
+- Add the project repository as the "upstream" remote.
+  - In your project repository, click the download button and then copy the HTTPS URL.
+  - Then type this and paste the URL.
+```
+git remote add upstream <url>
+```
+  - Use git `remote -v` to check that you now have two remotes.
+- To make sure that you have the lastest version of the project repository, run this command.
+```
+git pull 
+```
+- Create a new branch, by execute this command. You can change the branch name based on what are you going to do, for this example I call it, `fixingbugs`.
+```
+git checkout -b fixingbugs
+```
+- Now, you can start editing the files. Run `npm start` for the development environment.
+- After you have finished editing, simply run `npm run build`.
+- Add all files to staging area.
+```
+git add .
+```
+- Then, you can commit your changes.
+```
+git commit -m "Fixed bugs"
+```
+- Push your changes.
+```
+git push -u origin fixingbugs
+```
+- After that you can see the `Compare and Pull Request` button and follow the instructions.
+- That's it! Thanks for your contribution! 🤗
+<!-- ENDOF How To Contribute -->
+
+<!-- Author -->
+## Author
+[(Back to top)](#table-of-contents)
+
+- Frontend Mentor - [@vanzasetia](https://www.frontendmentor.io/profile/vanzasetia)
+- Twitter - [@vanzasetia](https://www.twitter.com/vanzasetia)
+<!-- ENDOF Author -->
+
+<!-- Acknowledgments -->
+## Acknowledgement
+[(Back to top)](#table-of-contents)
+
+### Thank You!
+First of all, thank you for everyone that has read this till this point. 👍 You are amazing! You don't jump to this section directly, do you? 🙄
+
+### Inspiration
+For this `README.md` file I got inspiration from @jubeatt\'s [README.md file on Sunnyside-agency-landing-page repo](https://github.com/jubeatt/Sunnyside-agency-landing-page#readme). It is a nice and informative `README.md`. For those of you who are doing the [Sunnyside agency landing page challenge](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef), I recommend to read that to get some tips on doing the challenge.
+
+### Banner
+- For the banner image, I used [Canva](https://www.canva.com/). It's free and can be used on Android. 
+- The doodle image is coming from [Open Doodles website](https://opendoodles.com/). It's free!
+- For the programming logos, they're coming from [Devicon](https://devicon.dev/) for the HTML and CSS logo. For the Sass I used the Sass logo from the [Sass official website](https://sass-lang.com/styleguide/brand).
+<!-- END OF Acknowledgments -->
+
+<!-- LICENSE -->
+## License
+[(Back to top)](#table-of-contents)
+
+>You can check out [the full license](https://github.com/vanzasetia/social-proof-section/blob/master/LICENSE)
+
+This project is licensed under the terms of the MIT license.
+
+For those of you who are wondering, why do you need to license this? 
+- Well, first it's free 😁.
+- Second I check this [Choose license website](https://choosealicense.com/) to help me choose a license.
+- The last reason, if I don't want to choose a license, then [here's what gonna happen](https://choosealicense.com/no-permission/).
+<!-- ENDOF LICENSE -->
+
+<!-- References -->
+## References
+[(Back to top)](#table-of-contents)
+
+### Blog Posts
+- [Medium | How to Write Beautiful and Meaningful README.md](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
+
+### GitHub Repositories
+- [List of awesome README.md](https://github.com/matiassingers/awesome-readme/blob/master/readme.md)
+- [Jubeatt's README.md](https://github.com/jubeatt/Sunnyside-agency-landing-page#readme)
+
+### Others
+- [Shields.io](https://shields.io) - For all the badges.
+- [Canva](https://canva.com) - For designing.
+- [Sass Guidelines](https://sass-guidelin.es/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [HTML Validator](https://validator.w3.org/)
+- [Font Converter](https://www.fontconverter.io/en)
+
+<!-- ENDOF References -->
