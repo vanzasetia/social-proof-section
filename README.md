@@ -140,6 +140,8 @@ node --version
   - [Browsersync](https://browsersync.io/) for the development server.
   - [Sass](https://www.npmjs.com/package/sass) to compile Sass code into CSS.
   - [npm-run-all](https://www.npmjs.com/package/npm-run-all) to run the `devserver` and the `watch:sass` script simultaneously. Also, for the `build` script.
+  - [Postcss](https://www.npmjs.com/package/postcss) to run autoprefixer.
+  - [Autoprefixer](https://www.npmjs.com/package/autoprefixer) to add vendor prefixes if needed.
   - [Prettier](https://www.npmjs.com/package/prettier) to format the HTML code.
   - [csscomb](https://www.npmjs.com/package/csscomb) to format and sort the properties order the Sass and CSS files.
   - [markserv](https://www.npmjs.com/package/markserv) live server for the markdown file. (Optional).
