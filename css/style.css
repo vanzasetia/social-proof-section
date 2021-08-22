@@ -386,6 +386,7 @@ html {
 body {
   background: top left 100% no-repeat, bottom right 100% no-repeat;
   background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  color: #502050;
   font-family: "Spartan", sans-serif;
   font-size: 0.9375rem;
 }
@@ -416,4 +417,41 @@ img {
 
 .testimonial__wrapper {
   text-align: center;
+}
+
+.rating {
+  margin: 2.5rem 0;
+}
+
+.rating__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.9375rem 0;
+  border-radius: 0.5em;
+  background-color: #f7f2f7;
+  padding: 1em;
+}
+
+.rating__stars {
+  display: flex;
+}
+@supports (gap: 0.5rem) {
+  .rating__stars {
+    gap: 0.5rem;
+  }
+}
+
+.rating__star:not(:first-child) {
+  margin-left: 0.375rem;
+}
+@supports (gap: 0.5rem) {
+  .rating__star:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
+.rating__description {
+  margin-bottom: 0;
+  font-size: 0.875rem;
 }

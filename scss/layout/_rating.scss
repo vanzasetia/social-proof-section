@@ -1,2 +1,36 @@
 @use "../abstracts" as *;
 
+.rating {
+  margin: rem(40) 0;
+}
+
+.rating__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: rem(15) 0;
+  border-radius: 0.5em;
+  background-color: $light-grayish-magenta;
+  padding: 1em;
+}
+
+.rating__stars {
+  display: flex;
+  
+  @supports (gap: rem(8)) {
+    gap: rem(8);
+  }
+}
+
+.rating__star:not(:first-child) {
+  margin-left: rem(6);
+  
+  @supports (gap: rem(8)) {
+    margin-left: 0;
+  }
+}
+
+.rating__description {
+  margin-bottom: 0;
+  font-size: rem(14);
+}
