@@ -132,7 +132,7 @@ If this the first time, you are starting to contribute to an open source, it mig
 
 ### Prerequisite
 - If you find bug, typo, issue or anything like that, then continue. If not, well just [skip to the next section](#author).
-- You need to have [Node.js](https://nodejs.org/en/) installed on your machine. To check that you have Node.js, try to run this command:
+- You need to have [Node.js](https://nodejs.org/en/) installed on your machine. To check that you have Node.js, try to run this command on your terminal:
 ```
 node --version
 ```
