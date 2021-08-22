@@ -43,11 +43,14 @@
   - [Setup](#setup)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-  - [Thank You](#thank-you)
+  - [Thank you](#thank-you)
   - [Inspiration](#inspiration)
   - [Banner](#banner)
 - [License](#license)
 - [References](#references)
+  - [Blog posts](#blog-posts)
+  - [GitHub repositories](#github-repositories)
+  - [Others](#others)
 <!-- ENDOF Table Of Contents -->
 
 <!-- Overview -->
@@ -196,6 +199,8 @@ For those of you who are wondering, why do you need to license this?
 
 ### Blog Posts
 - [Medium | How to Write Beautiful and Meaningful README.md](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
+- [BEM By Examples](https://sparkbox.com/foundry/bem_by_example)
+- [Freecodecamp | How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
 ### GitHub Repositories
 - [List of awesome README.md](https://github.com/matiassingers/awesome-readme/blob/master/readme.md)
@@ -207,6 +212,6 @@ For those of you who are wondering, why do you need to license this?
 - [Sass Guidelines](https://sass-guidelin.es/)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [HTML Validator](https://validator.w3.org/)
-- [Font Converter](https://www.fontconverter.io/en)
+- [Font Converter](https://www.fontconverter.io/en) - Convert `ttf` to `woff` and `woff2`
 
 <!-- ENDOF References -->
