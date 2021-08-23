@@ -204,7 +204,7 @@ Also don't worry about the `width` and `height` property will override the exter
 If this the first time, you are starting to contribute to an open source, it might be confusing to follow along. I recommend to check this article about [make your first open-source contribution by Marco Denic](https://community.codenewbie.org/denicmarko/make-your-first-open-source-contribution-19k2). After that, you can come back and follow along.
 
 ### Prerequisite
-- If you find bug, tpo, issue or anything like that, then continue. If not, well just [skip to the next section](#author).
+- If you find bug, tpo, issue or anything that can be improved, then continue. If not, well just [skip to the next section](#author).
 - You need to have [Node.js](https://nodejs.org/en/) installed on your machine. To check that you have Node.js, try to run this command on your terminal:
 ```
 node --version
