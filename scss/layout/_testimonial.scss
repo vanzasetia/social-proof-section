@@ -14,7 +14,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: rem(60);
     margin: 0 auto;
-    max-width: rem(1280);
+    max-width: rem(1200);
     
     @supports (gap: rem(60)) {
       grid-gap: 0;
@@ -56,6 +56,10 @@
   background-color: $very-dark-magenta;
   padding: rem(24);
   color: $pure-white;
+  
+  @include breakpoint-up("very-small") {
+    padding: rem(40);
+  }
 }
 
 .testimonial__item:not(:first-child) {

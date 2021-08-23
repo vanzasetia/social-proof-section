@@ -443,7 +443,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3.75rem;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 75rem;
   }
   @supports (gap: 3.75rem) {
     .testimonial__container {
@@ -488,6 +488,11 @@ img {
   background-color: #502050;
   padding: 1.5rem;
   color: white;
+}
+@media screen and (min-width: 61.25em) {
+  .testimonial__item {
+    padding: 2.5rem;
+  }
 }
 
 .testimonial__item:not(:first-child) {
