@@ -173,6 +173,10 @@ But, let say I care all the users that use Mi Browser and other browsers that do
 ```
 
 ### Useful Resources
+- [BEM By Examples](https://sparkbox.com/foundry/bem_by_example) - This helped me understand better about BEM. If you're still get confused about BEM, then check it out!
+- [Github Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) - If I forget about markdown syntax, then this is a file that I often refer to.
+- [Flexbox Malven](https://flexbox.malven.co/) - If one day, I forget about flexbox, then this is a great reminder.
+- [Can I Use](https://caniuse.com/) - It helped me to know whether or not that CSS property has been widely supported or not.
 
 ### Continued Development
 <!-- ENDOF My Process -->
@@ -185,7 +189,7 @@ But, let say I care all the users that use Mi Browser and other browsers that do
 If this the first time, you are starting to contribute to an open source, it might be confusing to follow along. I recommend to check this article about [make your first open-source contribution by Marco Denic](https://community.codenewbie.org/denicmarko/make-your-first-open-source-contribution-19k2). After that, you can come back and follow along.
 
 ### Prerequisite
-- If you find bug, typo, issue or anything like that, then continue. If not, well just [skip to the next section](#author).
+- If you find bug, tpo, issue or anything like that, then continue. If not, well just [skip to the next section](#author).
 - You need to have [Node.js](https://nodejs.org/en/) installed on your machine. To check that you have Node.js, try to run this command on your terminal:
 ```
 node --version
