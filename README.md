@@ -89,6 +89,10 @@ Users should be able to:
 
 ![Structure of the page](./images/general-structure.jpg)
 
+![Structure of the rating](./images/rating-structure.jpg)
+
+![Structure of the testimonial item](./images/testimonial-item-structure.jpg)
+
 ### What I Learned
 Well I actually learn a lot about how to write a good `README.md`, than the project itself. But, I'm gonna write every technique that I did when building this project.
 
@@ -117,6 +121,55 @@ body {
 }
 ```
 This way, you only need to write the new `background-image` inside the `@media` query.
+
+#### Support Query
+
+> The @supports CSS at-rule lets you specify declarations that depend on a browser's support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
+
+From [MDN | @supports - CSS: Cascading Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
+
+It's simply, let us give fallback by specifying another CSS property that gets more support by most browsers or the opposite. For example, I want to use `gap` property on flexbox layout. But, unfortunately the [Mi Browser](https://play.google.com/store/apps/details?id=com.mi.globalbrowser) doesn't support `gap` property and `@support` query.
+
+I had checked [Can I Use for `gap` property](https://caniuse.com/?search=gap) for the flexbox layout, it gets **86.5%**, which in my opinion it's already get supported well.
+
+![Can I Use website report for gap property](./images/caniuse-gap.jpg)
+
+But, let say I care all the users that use Mi Browser and other browsers that don't support `gap` property.
+
+```css
+/**
+* 1. If the browser doesn't support the 
+*    "@support" query or the property inside the
+*    support query then, it will apply 
+*    this styling.
+*/
+
+.rating__stars {
+  display: flex;
+}
+/* If the browser support the "gap" 
+   property, then use it */
+@supports (gap: 0.5rem) {
+  .rating__stars {
+    gap: 0.5rem; /* 1 */
+  }
+}
+
+.rating__star:not(:first-child) {
+  margin-left: 0.5rem; /* 1 */
+}
+
+/* If the browser support the gap 
+   property then, I don't need 
+   "margin-left" for the star that is 
+   not the first child of the 
+   .rating__stars. */
+@supports (gap: 0.5rem) {
+  .rating__star:not(:first-child) {
+    margin-left: 0;
+  }
+}
+```
 
 ### Useful Resources
 
