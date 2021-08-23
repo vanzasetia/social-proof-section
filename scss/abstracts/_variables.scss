@@ -16,14 +16,8 @@ $pure-white: hsl(0, 0%, 100%);
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  "tiny": 50em, // 800px
-  "very-small": 61.25em, // 980px
-  "small": 78.75em, // 1260px
-  "medium": 90em // 1440px
+  "tiny": 37.5em // 600px
 );
 $breakpoints-down: (
-  "tiny": 49.9375em, // 799px
-  "very-small": 61.1875em, // 979px
-  "small": 78.6875em, // 1259px
-  "medium": 89.9375em // 1439px
+  "tiny": 37.4375em // 599px
 );
