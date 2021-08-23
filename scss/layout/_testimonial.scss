@@ -27,12 +27,11 @@
 .testimonial__photo {
   margin-right: rem(24);
   border-radius: 50%;
-  height: rem(48);
   width: rem(48);
+  height: rem(48);
 }
 
-.testimonial__name,
-.testimonial__status {
+.testimonial__name, .testimonial__status {
   margin: 0;
   font-size: rem(14);
 }
