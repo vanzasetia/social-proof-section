@@ -32,6 +32,7 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -72,6 +73,15 @@ Users should be able to:
 ### Links
 - [🌐 Live Review](https://vanzasocialproof.netlify.app/)
 - [👨‍🏫 Frontend Mentor Solution](https://www.frontendmentor.io/solutions/social-proof-section-hmtl5-css3-sass-1MYuG2zzt)
+
+### Screenshots
+
+**Desktop**
+![Desktop](./screenshots/desktop.jpg)
+
+**Mobile**
+![Mobile](./screenshots/mobile.jpg)
+
 <!-- ENDOF Overview -->
 
 <!-- My Process -->
