@@ -37,6 +37,7 @@
   - [What I learned](#what-i-learned)
     - [CSS Shorthand Properties](#css-shorthand-properties)
     - [Support Query](#support-query)
+    - [Cumulative Layout Shift](#cumulative-layout-shift)
   - [Useful resources](#useful-resources)
   - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
@@ -172,6 +173,20 @@ But, let say I care all the users that use Mi Browser and other browsers that do
 }
 ```
 
+#### Cumulative Layout Shift
+Have you ever go to a website and then you want to click something and suddenly... the button \*keep moving\* down? It's usually because the ads or images that causing it. This is where `width` and `height` properties is coming to play.
+
+> Always include `width` and `height` size attributes on your images and video elements... This approach ensures that the browser can allocate the correct amount of space in the document while the image is loading.
+
+From [Web Dev | Optimize Cumulative Layout Shift](https://web.dev/optimize-cls/)
+
+By using `width` and `height` property, it will prevent the shifting layout from happening 👍.
+
+![Good CLS](./gif/good-cls.gif)
+*It creates a **placeholder** before the image is fully loaded*
+
+Also don't worry about the `width` and `height` property will override the external styling. They won't do that. It's also will scale automatically based on its *aspect ratio*.
+
 ### Useful Resources
 - [BEM By Examples](https://sparkbox.com/foundry/bem_by_example) - This helped me understand better about BEM. If you're still get confused about BEM, then check it out!
 - [Github Markdown Cheat Sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) - If I forget about markdown syntax, then this is a file that I often refer to.
@@ -299,5 +314,6 @@ For those of you who are wondering, why do you need to license this?
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [HTML Validator](https://validator.w3.org/)
 - [Font Converter](https://www.fontconverter.io/en) - Convert `ttf` to `woff` and `woff2`
+- [Gif Marker - imgflip](https://imgflip.com/gif-maker)
 
 <!-- ENDOF References -->
