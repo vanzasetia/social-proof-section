@@ -1,5 +1,7 @@
 @use "../abstracts" as *;
 
+$gap: rem(8);
+
 .rating {
   margin: rem(40) 0;
 }
@@ -17,15 +19,17 @@
 .rating__stars {
   display: flex;
   
-  @supports (gap: rem(8)) {
-    gap: rem(8);
+  @supports (gap: $gap) {
+    gap: $gap;
   }
 }
 
 .rating__star:not(:first-child) {
-  margin-left: rem(6);
+  $gap: rem(8);
   
-  @supports (gap: rem(8)) {
+  margin-left: $gap;
+  
+  @supports (gap: $gap) {
     margin-left: 0;
   }
 }

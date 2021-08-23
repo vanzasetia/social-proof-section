@@ -443,7 +443,7 @@ img {
 }
 
 .rating__star:not(:first-child) {
-  margin-left: 0.375rem;
+  margin-left: 0.5rem;
 }
 @supports (gap: 0.5rem) {
   .rating__star:not(:first-child) {
