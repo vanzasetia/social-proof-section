@@ -194,6 +194,8 @@ Also don't worry about the `width` and `height` property will override the exter
 - [Can I Use](https://caniuse.com/) - It helped me to know whether or not that CSS property has been widely supported.
 
 ### Continued Development
+Maybe after some time, I will refactor this code or I'm just gonna improve this solution.
+
 <!-- ENDOF My Process -->
 
 <!-- How To Contribute -->
@@ -299,6 +301,7 @@ For those of you who are wondering, why do you need to license this?
 [(Back to top)](#table-of-contents)
 
 ### Blog Posts
+- [How to write an Awesome README](https://towardsdatascience.com/how-to-write-an-awesome-readme-68bf4be91f8b)
 - [Medium | How to Write Beautiful and Meaningful README.md](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
 - [BEM By Examples](https://sparkbox.com/foundry/bem_by_example)
 - [Freecodecamp | How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
@@ -308,6 +311,7 @@ For those of you who are wondering, why do you need to license this?
 - [Jubeatt's README.md](https://github.com/jubeatt/Sunnyside-agency-landing-page#readme)
 
 ### Others
+- [choosealicense.com](https://choosealicense.com)
 - [Shields.io](https://shields.io) - For all the badges.
 - [Canva](https://canva.com) - For designing.
 - [Sass Guidelines](https://sass-guidelin.es/)
