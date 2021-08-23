@@ -70,6 +70,10 @@ body {
 
 main {
   padding: rem(64) rem(16);
+  
+  @include breakpoint-up("very-small") {
+    padding: rem(128) rem(32);
+  }
 }
 
 h1 {
