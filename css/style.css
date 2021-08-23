@@ -387,7 +387,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: top left 100% no-repeat, bottom right 100% no-repeat;
+  background: top left/100% no-repeat, bottom right/100% no-repeat;
   background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
   min-height: 100vh;
   color: #502050;
@@ -474,7 +474,7 @@ img {
   #RATING
 \*------------------------------------*/
 .rating {
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
 .rating__item {
