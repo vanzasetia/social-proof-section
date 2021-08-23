@@ -384,8 +384,12 @@ html {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: top left 100% no-repeat, bottom right 100% no-repeat;
   background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  min-height: 100vh;
   color: #502050;
   font-family: "Spartan", sans-serif;
   font-size: 0.9375rem;
@@ -420,6 +424,50 @@ img {
 \*------------------------------------*/
 .testimonial__wrapper {
   text-align: center;
+}
+
+.testimonial__item {
+  border-radius: 0.5em;
+  background-color: #502050;
+  padding: 1.5rem;
+  color: white;
+}
+
+.testimonial__item:not(:first-child) {
+  margin-top: 1.25rem;
+}
+
+.testimonial__person {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__photo {
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.testimonial__name,
+.testimonial__status {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.testimonial__name {
+  font-weight: 700;
+}
+
+.testimonial__verified {
+  color: #ee68a4;
+  font-style: normal;
+}
+
+.testimonial__quote {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
 }
 
 /*------------------------------------*\
