@@ -8,7 +8,7 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/social-proof-section?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/social-proof-section?style=for-the-badge&logo=git">
-  <img alt="Netlify" src="https://img.shields.io/netlify/9c613af3-0754-41ce-b44d-b5396b4738a8?style=for-the-badge&logo=netlify">
+  <img alt="Netlify" src="https://img.shields.io/netlify/da290647-75c9-42f6-acec-c1a0225e25ec?style=for-the-badge&logo=netlify">
   <img alt="GitHub" src="https://img.shields.io/github/license/vanzasetia/social-proof-section?color=green&style=for-the-badge&logo=github">
 </p>
 <!-- ENDOF Badges -->
