@@ -422,6 +422,11 @@ img {
 /*------------------------------------*\
   #TESTIMONIAL
 \*------------------------------------*/
+.testimonial {
+  margin: 0 auto;
+  max-width: 31.25rem;
+}
+
 .testimonial__wrapper {
   text-align: center;
 }
