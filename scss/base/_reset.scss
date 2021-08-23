@@ -61,7 +61,7 @@ body {
   color: $very-dark-magenta;
   font-family: "Spartan", sans-serif;
   font-size: rem(15);
-  
+
   @include breakpoint-up("tiny") {
     background-image: url("../images/bg-pattern-top-desktop.svg"),
     url("../images/bg-pattern-bottom-desktop.svg");
@@ -70,7 +70,7 @@ body {
 
 main {
   padding: rem(64) rem(16);
-  
+
   @include breakpoint-up("very-small") {
     padding: rem(128) rem(32);
   }

@@ -7,15 +7,15 @@
 .testimonial__container {
   margin: 0 auto;
   max-width: rem(500);
-  
+
   @include breakpoint-up("very-small") {
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: rem(60);
+    align-items: center;
     margin: 0 auto;
     max-width: rem(1200);
-    
+
     @supports (gap: rem(60)) {
       grid-gap: 0;
       gap: rem(60);
@@ -25,10 +25,10 @@
 
 .testimonial__wrapper {
   text-align: center;
-  
+
   @include breakpoint-up("very-small") {
-    text-align: left;
     max-width: rem(480);
+    text-align: left;
   }
 }
 
@@ -36,7 +36,6 @@
   @include breakpoint-up("very-small") {
     font-size: rem(45);
   }
-  
   @include breakpoint-up("small") {
     font-size: rem(50);
   }
@@ -56,7 +55,7 @@
   background-color: $very-dark-magenta;
   padding: rem(24);
   color: $pure-white;
-  
+
   @include breakpoint-up("very-small") {
     padding: rem(40);
   }
@@ -64,14 +63,14 @@
 
 .testimonial__item:not(:first-child) {
   margin-top: rem(20);
-  
+
   @include breakpoint-up("very-small") {
     margin-top: 0;
     margin-left: rem(32);
-    
+
     @supports (gap: rem(32)) {
-      margin-left: 0;
       gap: rem(32);
+      margin-left: 0;
     }
   }
 }
