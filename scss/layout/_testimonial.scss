@@ -4,16 +4,50 @@
   #TESTIMONIAL
 \*------------------------------------*/
 
-.testimonial {
+.testimonial__container {
   margin: 0 auto;
   max-width: rem(500);
+  
+  @include breakpoint-up("very-small") {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: rem(60);
+    margin: 0 auto;
+    max-width: rem(1280);
+    
+    @supports (gap: rem(60)) {
+      grid-gap: 0;
+      gap: rem(60);
+    }
+  }
 }
 
 .testimonial__wrapper {
   text-align: center;
+  
+  @include breakpoint-up("very-small") {
+    text-align: left;
+    max-width: rem(480);
+  }
+}
+
+.testimonial__title {
+  @include breakpoint-up("very-small") {
+    font-size: rem(45);
+  }
+}
+
+.testimonial__list {
+  @include breakpoint-up("very-small") {
+    display: flex;
+    grid-column: 1 / 3;
+    gap: rem(32);
+  }
 }
 
 .testimonial__item {
+  position: relative;
   border-radius: 0.5em;
   background-color: $very-dark-magenta;
   padding: rem(24);
@@ -22,6 +56,28 @@
 
 .testimonial__item:not(:first-child) {
   margin-top: rem(20);
+  
+  @include breakpoint-up("very-small") {
+    margin-top: 0;
+    margin-left: rem(32);
+    
+    @supports (gap: rem(32)) {
+      margin-left: 0;
+      gap: rem(32);
+    }
+  }
+}
+
+.testimonial__item:nth-child(2) {
+  @include breakpoint-up("very-small") {
+    top: rem(20);
+  }
+}
+
+.testimonial__item:last-child {
+  @include breakpoint-up("very-small") {
+    top: rem(40);
+  }
 }
 
 .testimonial__person {

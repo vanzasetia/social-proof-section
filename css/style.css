@@ -403,6 +403,11 @@ body {
 main {
   padding: 4rem 1rem;
 }
+@media screen and (min-width: 61.25em) {
+  main {
+    padding: 8rem 2rem;
+  }
+}
 
 h1 {
   margin: 0.875rem 0;
@@ -427,16 +432,53 @@ img {
 /*------------------------------------*\
   #TESTIMONIAL
 \*------------------------------------*/
-.testimonial {
+.testimonial__container {
   margin: 0 auto;
   max-width: 31.25rem;
+}
+@media screen and (min-width: 61.25em) {
+  .testimonial__container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.75rem;
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+  @supports (gap: 3.75rem) {
+    .testimonial__container {
+      grid-gap: 0;
+      gap: 3.75rem;
+    }
+  }
 }
 
 .testimonial__wrapper {
   text-align: center;
 }
+@media screen and (min-width: 61.25em) {
+  .testimonial__wrapper {
+    text-align: left;
+    max-width: 30rem;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .testimonial__title {
+    font-size: 2.8125rem;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .testimonial__list {
+    display: flex;
+    grid-column: 1/3;
+    gap: 2rem;
+  }
+}
 
 .testimonial__item {
+  position: relative;
   border-radius: 0.5em;
   background-color: #502050;
   padding: 1.5rem;
@@ -445,6 +487,30 @@ img {
 
 .testimonial__item:not(:first-child) {
   margin-top: 1.25rem;
+}
+@media screen and (min-width: 61.25em) {
+  .testimonial__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+  @supports (gap: 2rem) {
+    .testimonial__item:not(:first-child) {
+      margin-left: 0;
+      gap: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .testimonial__item:nth-child(2) {
+    top: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .testimonial__item:last-child {
+    top: 2.5rem;
+  }
 }
 
 .testimonial__person {
@@ -485,8 +551,14 @@ img {
 .rating {
   margin: 3rem 0;
 }
+@media screen and (min-width: 61.25em) {
+  .rating {
+    margin: 0;
+  }
+}
 
 .rating__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -494,6 +566,25 @@ img {
   border-radius: 0.5em;
   background-color: #f7f2f7;
   padding: 1em;
+}
+@media screen and (min-width: 61.25em) {
+  .rating__item {
+    flex-direction: row;
+    padding: 1.5em;
+    width: 28.125rem;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .rating__item:nth-child(2) {
+    left: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .rating__item:last-child {
+    left: 7.5rem;
+  }
 }
 
 .rating__stars {
@@ -517,4 +608,10 @@ img {
 .rating__description {
   margin-bottom: 0;
   font-size: 0.875rem;
+}
+@media screen and (min-width: 61.25em) {
+  .rating__description {
+    margin: 0;
+    margin-left: 2rem;
+  }
 }

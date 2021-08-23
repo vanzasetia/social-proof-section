@@ -3,14 +3,16 @@
 /*------------------------------------*\
   #RATING
 \*------------------------------------*/
-
-$gap: rem(8);
-
 .rating {
   margin: rem(48) 0;
+  
+  @include breakpoint-up("very-small") {
+    margin: 0;
+  }
 }
 
 .rating__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,22 +20,38 @@ $gap: rem(8);
   border-radius: 0.5em;
   background-color: $light-grayish-magenta;
   padding: 1em;
+  
+  @include breakpoint-up("very-small") {
+    flex-direction: row;
+    padding: 1.5em;
+    width: rem(450);
+  }
+}
+
+.rating__item:nth-child(2) {
+  @include breakpoint-up("very-small") {
+    left: rem(60);
+  }
+}
+
+.rating__item:last-child {
+  @include breakpoint-up("very-small") {
+    left: rem(120);
+  }
 }
 
 .rating__stars {
   display: flex;
 
-  @supports (gap: $gap) {
-    gap: $gap;
+  @supports (gap: rem(8)) {
+    gap: rem(8);
   }
 }
 
 .rating__star:not(:first-child) {
-  $gap: rem(8);
+  margin-left: rem(8);
 
-  margin-left: $gap;
-
-  @supports (gap: $gap) {
+  @supports (gap: rem(8)) {
     margin-left: 0;
   }
 }
@@ -41,4 +59,9 @@ $gap: rem(8);
 .rating__description {
   margin-bottom: 0;
   font-size: rem(14);
+  
+  @include breakpoint-up("very-small") {
+    margin: 0;
+    margin-left: rem(32);
+  }
 }
