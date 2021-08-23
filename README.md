@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/social-proof-section?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/chat-app-css-illustration?style=for-the-badge&logo=git">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/social-proof-section?style=for-the-badge&logo=git">
   <img alt="Netlify" src="https://img.shields.io/netlify/9c613af3-0754-41ce-b44d-b5396b4738a8?style=for-the-badge&logo=netlify">
   <img alt="GitHub" src="https://img.shields.io/github/license/vanzasetia/social-proof-section?color=green&style=for-the-badge&logo=github">
 </p>
@@ -36,6 +36,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
     - [CSS Shorthand Properties](#css-shorthand-properties)
+    - [Support Query](#support-query)
   - [Useful resources](#useful-resources)
   - [Continued development](#continued-development)
 - [How to contribute](#how-to-contribute)
@@ -111,8 +112,8 @@ body {
      no matter how big or small the 
      user screen size. */
   background: 
-    top left 100% no-repeat, 
-    bottom right 100% no-repeat;
+    top left/100% no-repeat, 
+    bottom right/100% no-repeat;
   /* While the image url will be changed
      on certain size. */
   background-image: 
