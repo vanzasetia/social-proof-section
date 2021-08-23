@@ -7,3 +7,47 @@
 .testimonial__wrapper {
   text-align: center;
 }
+
+.testimonial__item {
+  border-radius: 0.5em;
+  background-color: $very-dark-magenta;
+  padding: rem(24);
+  color: $pure-white;
+}
+
+.testimonial__item:not(:first-child) {
+  margin-top: rem(20);
+}
+
+.testimonial__person {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__photo {
+  margin-right: rem(24);
+  border-radius: 50%;
+  height: rem(48);
+  width: rem(48);
+}
+
+.testimonial__name,
+.testimonial__status {
+  margin: 0;
+  font-size: rem(14);
+}
+
+.testimonial__name {
+  font-weight: 700;
+}
+
+.testimonial__verified {
+  color: $soft-pink;
+  font-style: normal;
+}
+
+.testimonial__quote {
+  margin-top: rem(20);
+  margin-bottom: 0;
+  font-size: rem(14);
+}
