@@ -105,22 +105,31 @@ I recommend to always use shorthand property everytime you have a chance to do i
 
 From [MDN | CSS Shorthand Property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
-It saves your priceless time and energy! But, it is a little bit tricky. I recommend that only use shorthand properties, like `font`, `padding`, `background`, `margin`, etc, for things that will consistent on any condition. In this case, the *repetition*, *position*, and the *size* of the background will always be the same. But, the `background-image` will change on desktop screen size. So, what I did...
+It saves your priceless time and energy! But, it is a little bit tricky. I recommend that only use shorthand properties, like `font`, `padding`, `background`, `margin`, etc, for things that will consistent on any condition. In this case, the *repetition* and the *position* of the background will always be the same. But, the `background-image` will change on desktop screen size. So, what I did...
 ```css
 body {
-  /* The position, repetition, and 
-     the size will always be the same,
+  /* The position and repetition will always be the same,
      no matter how big or small the 
      user screen size. */
   background: 
-    top left/100% no-repeat, 
-    bottom right/100% no-repeat;
+    top left no-repeat, 
+    bottom right no-repeat;
   /* While the image url will be changed
      on certain size. */
   background-image: 
     url("../images/bg-pattern-top-mobile.svg"), 
     url("../images/bg-pattern-bottom-mobile.svg");
 }
+
+@media screen and (min-width: 37.5em) {
+  body {
+    /* Used desktop bg-pattern */
+    background-image: 
+      url("../images/bg-pattern-top-desktop.svg"), 
+      url("../images/bg-pattern-bottom-desktop.svg");
+  }
+}
+
 ```
 This way, you only need to write the new `background-image` inside the `@media` query.
 
