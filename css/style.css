@@ -468,6 +468,11 @@ img {
     font-size: 2.8125rem;
   }
 }
+@media screen and (min-width: 80em) {
+  .testimonial__title {
+    font-size: 3.125rem;
+  }
+}
 
 @media screen and (min-width: 61.25em) {
   .testimonial__list {
@@ -575,13 +580,13 @@ img {
   }
 }
 
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 80em) {
   .rating__item:nth-child(2) {
     left: 3.75rem;
   }
 }
 
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 80em) {
   .rating__item:last-child {
     left: 7.5rem;
   }

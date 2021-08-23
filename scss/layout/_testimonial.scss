@@ -36,6 +36,10 @@
   @include breakpoint-up("very-small") {
     font-size: rem(45);
   }
+  
+  @include breakpoint-up("small") {
+    font-size: rem(50);
+  }
 }
 
 .testimonial__list {

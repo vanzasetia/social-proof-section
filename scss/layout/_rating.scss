@@ -29,13 +29,13 @@
 }
 
 .rating__item:nth-child(2) {
-  @include breakpoint-up("very-small") {
+  @include breakpoint-up("small") {
     left: rem(60);
   }
 }
 
 .rating__item:last-child {
-  @include breakpoint-up("very-small") {
+  @include breakpoint-up("small") {
     left: rem(120);
   }
 }
